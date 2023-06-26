@@ -52,7 +52,7 @@ section{
     min-height: 100vh;
     display:flex;
     align-items: center;
-    background: url(images/option_2.avif) no-repeat;
+    background: url(images/option_3.avif) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -303,4 +303,12 @@ section{
     body{
         font-size: 10px;
     }
+}
+
+.services-text{
+    text-decoration: none;
+    color: black;
+}
+.services-text :visited{
+    color: black;
 }
