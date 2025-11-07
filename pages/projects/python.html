@@ -1,181 +1,226 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Python Projects - Ahmed Hindy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../assets/css/main.css" />
-		<link rel="icon" href="../../images/ahmedhindy.png" type="image/png">
-		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Python Projects | Ahmed Hindy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Python projects by Ahmed Hindy across automation, web scraping, and market analysis using pandas, NumPy, BeautifulSoup, and Matplotlib."
+    />
+    <link rel="icon" href="../../images/ahmedhindy.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="../../index.html">
+            Ahmed Hindy
+            <span>Data Analyst</span>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M4 6.75h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5Zm16 4.5H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Zm0 6H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Z"
+              />
+            </svg>
+          </button>
+          <nav class="site-nav" id="primary-navigation" data-nav>
+            <a href="../../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../certifications.html">Certifications</a>
+            <a href="../career.html">Career</a>
+            <a href="../hobbies.html">Hobbies</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a
+            class="btn btn--ghost nav-cta"
+            href="https://www.linkedin.com/in/ahmedhindy02"
+            target="_blank"
+            rel="noopener"
+          >
+            Let's connect
+          </a>
+        </div>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="surface surface--flat page-intro">
+              <span class="section__eyebrow">Python portfolio</span>
+              <h1>Automation, analysis, and insight at code speed</h1>
+              <p>
+                From web scraping pipelines to exploratory analysis, Python helps me transform messy inputs into reliable
+                intelligence.
+              </p>
+            </div>
+          </div>
+        </section>
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="../../index.html" class="logo"><strong>Ahmed</strong> <span>Hindy</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <section class="section">
+          <div class="container">
+            <div class="card-grid">
+              <article class="card project-card surface--flat">
+                <div class="project-card__image">
+                  <img
+                    src="../../images/Projects/Web Scraping/amazonWebScraping.jpg"
+                    alt="Amazon product price tracker built with Python"
+                  />
+                </div>
+                <h3 class="card__title">Amazon Product Price Tracker</h3>
+                <p>
+                  Lightweight scraper that records Amazon product titles, pricing, and collection dates to monitor price
+                  shifts over time.
+                </p>
+                <p><strong>Focus:</strong> Make price monitoring effortless for consumer products.</p>
+                <h4>Features</h4>
+                <ul class="card__bullets">
+                  <li>Scrapes product title and price from Amazon product pages.</li>
+                  <li>Structures and cleans data for readability before storage.</li>
+                  <li>Appends entries to CSV files to build a historical log.</li>
+                  <li>Supports automated execution on custom time intervals.</li>
+                </ul>
+                <h4>Stack</h4>
+                <ul class="card__bullets">
+                  <li>Python 3, BeautifulSoup, and Requests for acquisition.</li>
+                  <li>Pandas for data handling and exploration.</li>
+                  <li>CSV, OS, Time, and Datetime for scheduling and persistence.</li>
+                </ul>
+                <div class="project-card__footer">
+                  <a href="https://github.com/ahmed-h1ndy/amazon-web-scraping" target="_blank" rel="noopener">
+                    View on GitHub
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="../../index.html">Home</a></li>
-							<li><a href="../projects.html">All Projects</a></li>
-							<li><a href="../certifications.html">Certifications</a></li>
-							<li><a href="../career.html">Career</a></li>
-							<li><a href="../hobbies.html">Hobbies</a></li>
-						</ul>
-					</nav>
+              <article class="card project-card surface--flat">
+                <div class="project-card__image">
+                  <img
+                    src="../../images/Projects/Python/realEstateMarketAnalysis.jpg"
+                    alt="Real estate market analysis built with Python"
+                  />
+                </div>
+                <h3 class="card__title">Real Estate Market Analysis</h3>
+                <p>
+                  Data analysis and visualization workflow that merges customer profiles with property sales to reveal
+                  demand and revenue patterns.
+                </p>
+                <p><strong>Focus:</strong> Provide a single source of truth for market insights.</p>
+                <h4>Analytical highlights</h4>
+                <ul class="card__bullets">
+                  <li>Preprocessed and cleaned disparate real estate and customer datasets.</li>
+                  <li>Merged data to deepen segmentation and persona analysis.</li>
+                  <li>Performed descriptive statistics and exploratory data analysis (EDA).</li>
+                  <li>Visualized demographics, sales performance, and revenue trends.</li>
+                </ul>
+                <h4>Libraries</h4>
+                <ul class="card__bullets">
+                  <li>Pandas and NumPy for wrangling and computation.</li>
+                  <li>Datetime for date operations.</li>
+                  <li>Matplotlib for charting and presentation.</li>
+                </ul>
+                <div class="project-card__footer">
+                  <a href="https://github.com/ahmed-h1ndy/real-estate-analysis" target="_blank" rel="noopener">
+                    View on GitHub
+                    <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the header element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="../../images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>Python Projects</h1>
-							</header>
-							<div class="content">
-								<p>Data analysis, automation, and web scraping with Python.</p>
-							</div>
-						</div>
-					</section>
+        <section class="section">
+          <div class="container">
+            <div class="surface surface--subtle page-intro">
+              <h2>Keep the exploration going</h2>
+              <div class="btn-row" style="justify-content: center">
+                <a class="btn btn--ghost" href="../projects.html">All projects</a>
+                <a class="btn btn--ghost" href="tableau.html">Tableau</a>
+                <a class="btn btn--ghost" href="powerbi.html">Power BI</a>
+                <a class="btn btn--ghost" href="web-scraping.html">Web scraping</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<!-- Main -->
-					<div id="main">
+        <section class="section" id="contact">
+          <div class="container">
+            <div class="cta">
+              <h2>Let’s ship your next Python workflow</h2>
+              <p>
+                Whether you need automation, dashboards, or exploratory research, I’m ready to help.
+              </p>
+              <div class="btn-row" style="justify-content: center">
+                <a
+                  class="btn btn--primary"
+                  href="https://www.linkedin.com/in/ahmedhindy02"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Connect on LinkedIn
+                </a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/ahmed-h1ndy"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Code-Driven Solutions</h2>
-									</header>
-									<p>Leveraging Python's powerful libraries for data manipulation, analysis, and automation.</p>
-								</div>
-							</section>
+      <footer>
+        <div class="footer__inner">
+          <p>
+            &copy; <span data-current-year></span> Ahmed Hindy. Crafted with HTML, CSS, and a love for data.
+          </p>
+          <div class="social">
+            <a href="https://github.com/ahmed-h1ndy" aria-label="GitHub" target="_blank" rel="noopener">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ahmedhindy02"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://learn.365datascience.com/profile/ahmed-mostafa-123/"
+              aria-label="365 Data Science"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<section>
-									<a href="https://github.com/ahmed-h1ndy/amazon-web-scraping" class="image">
-										<img src="../../images/Projects/Web Scraping/amazonWebScraping.jpg" alt="Amazon Product Price Tracker" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Amazon Product Price Tracker</h3>
-											</header>
-											<p><strong>Project Overview:</strong> A simple Python-based tool that scrapes product information from Amazon (title, price, and date), stores it in a CSV file, and allows you to track price changes over time.</p>
-											<p><strong>Features:</strong></p>
-												<ul>
-													<li>Scrapes product title and price from an Amazon product page</li>
-													<li>Cleans and structures the data for readability</li>
-													<li>Saves the product information into a CSV file</li>
-													<li>Appends new data entries over time to build a price history</li>
-													<li>Allows automated price checks at custom time intervals</li>
-												</ul>
-											<p><strong>Technologies Used:</strong></p>
-												<ul>
-													<li>Python 3 with BeautifulSoup for HTML parsing</li>
-													<li>Requests for fetching web pages</li>
-													<li>Pandas for data handling and analysis</li>
-													<li>CSV/OS/Time/Datetime for file management & scheduling</li>
-												</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/ahmed-h1ndy/amazon-web-scraping" class="button">View on GitHub</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<a href="#" class="image">
-										<img src="../../images/Projects/Python/realEstateMarketAnalysis.jpg" alt="Real Estate Market Analysis" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Real Estate Market Analysis</h3>
-											</header>
-											<p><strong>Project Overview:</strong> A comprehensive data analysis and visualization project focused on the real estate market, leveraging Python (pandas, numpy, matplotlib) to clean, preprocess, and analyze datasets of customers and property sales.</p>
-											<p><strong>Key Analyses & Insights:</strong></p>
-												<ul>
-													<li>Preprocessed and cleaned raw real estate and customer datasets</li>
-													<li>Merged property and customer data for deeper insights</li>
-													<li>Performed descriptive statistics and exploratory data analysis (EDA)</li>
-													<li>Visualized customer demographics, property sales, and revenue trends</li>
-													<li>Generated actionable insights about sales performance and customer behavior</li>
-												</ul>
-											<p><strong>Tools & Libraries:</strong></p>
-												<ul>
-													<li>pandas → data manipulation and cleaning</li>
-													<li>numpy → numerical computations</li>
-													<li>datetime → working with dates</li>
-													<li>matplotlib → data visualization</li>
-												</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/ahmed-h1ndy/real-estate-analysis" class="button">View on GitHub</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Explore Other Categories</h2>
-									</header>
-									<ul class="actions">
-										<li><a href="../projects.html" class="button">All Projects</a></li>
-										<li><a href="tableau.html" class="button">Tableau</a></li>
-										<li><a href="powerbi.html" class="button">Power BI</a></li>
-										<li><a href="web-scraping.html" class="button">Web Scraping</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/ahmed-h1ndy" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/ahmedhindy02" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://learn.365datascience.com/profile/ahmed-mostafa-123/" class="icon alt"><img src="../../images/365datascienceIcon.jpg" alt="365 Data Science" style="width: 48px; height: 48px; vertical-align: middle; border-radius: 4px;"><span class="label">365 Data Science</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="../../assets/js/jquery.min.js"></script>
-			<script src="../../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../../assets/js/browser.min.js"></script>
-			<script src="../../assets/js/breakpoints.min.js"></script>
-			<script src="../../assets/js/util.js"></script>
-			<script src="../../assets/js/main.js"></script>
-
-	</body>
+    <script src="../../assets/js/site.js"></script>
+  </body>
 </html>

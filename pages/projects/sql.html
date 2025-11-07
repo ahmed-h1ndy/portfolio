@@ -1,148 +1,192 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>SQL Projects - Ahmed Hindy</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../assets/css/main.css" />
-		<link rel="icon" href="../../images/ahmedhindy.png" type="image/png">
-		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SQL Projects | Ahmed Hindy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="SQL projects by Ahmed Hindy featuring analytical queries, CTEs, and reusable views that power Tableau dashboards."
+    />
+    <link rel="icon" href="../../images/ahmedhindy.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="../../assets/css/theme.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <a class="brand" href="../../index.html">
+            Ahmed Hindy
+            <span>Data Analyst</span>
+          </a>
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-navigation"
+            data-nav-toggle
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M4 6.75h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5Zm16 4.5H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Zm0 6H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Z"
+              />
+            </svg>
+          </button>
+          <nav class="site-nav" id="primary-navigation" data-nav>
+            <a href="../../index.html">Home</a>
+            <a href="../projects.html">Projects</a>
+            <a href="../certifications.html">Certifications</a>
+            <a href="../career.html">Career</a>
+            <a href="../hobbies.html">Hobbies</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <a
+            class="btn btn--ghost nav-cta"
+            href="https://www.linkedin.com/in/ahmedhindy02"
+            target="_blank"
+            rel="noopener"
+          >
+            Let's connect
+          </a>
+        </div>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <main>
+        <section class="section">
+          <div class="container">
+            <div class="surface surface--flat page-intro">
+              <span class="section__eyebrow">SQL portfolio</span>
+              <h1>Data models that set the stage for great dashboards</h1>
+              <p>
+                Writing clean, modular SQL ensures every visualization is grounded in accurate, trustworthy data.
+              </p>
+            </div>
+          </div>
+        </section>
 
-				<!-- Header -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<header id="header" class="alt style2">
-						<a href="../../index.html" class="logo"><strong>Ahmed</strong> <span>Hindy</span></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        <section class="section">
+          <div class="container">
+            <div class="card surface--flat project-card">
+              <div class="project-card__image">
+                <img
+                  src="../../images/Projects/SQL/customerEngagementProject.png"
+                  alt="SQL customer engagement analysis powering Tableau dashboards"
+                />
+              </div>
+              <h3 class="card__title">Customer Engagement Analysis with SQL &amp; Tableau</h3>
+              <p>
+                Analytical queries and Tableau dashboards that surface how students learn, purchase, and revisit content
+                on a digital platform.
+              </p>
+              <p>
+                <strong>SQL approach:</strong> CTEs for modular analytics, reusable views, and analytical queries that feed
+                visual storytelling.
+              </p>
+              <h4>Query highlights</h4>
+              <ul class="card__bullets">
+                <li>CTEs to segment ratings, minutes watched, and purchases.</li>
+                <li>Reusable views for consistent reporting across dashboards.</li>
+                <li>Targeted queries to uncover top purchasing countries and months.</li>
+              </ul>
+              <h4>Insights unlocked</h4>
+              <ul class="card__bullets">
+                <li>English-speaking regions dominate purchases, highlighting localization opportunities.</li>
+                <li>High engagement but low conversion in India and Nigeria prompted regional pricing experiments.</li>
+                <li>Odd-month campaigns outperformed even months, confirming marketing pulses.</li>
+                <li>Introductory courses dominated &mdash; a chance to build structured progression paths.</li>
+              </ul>
+              <div class="project-card__footer">
+                <a href="https://github.com/ahmed-h1ndy/customer-engagement-sql-tableau" target="_blank" rel="noopener">
+                  View on GitHub
+                  <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="../../index.html">Home</a></li>
-							<li><a href="../projects.html">All Projects</a></li>
-							<li><a href="../certifications.html">Certifications</a></li>
-							<li><a href="../career.html">Career</a></li>
-							<li><a href="../hobbies.html">Hobbies</a></li>
-						</ul>
-					</nav>
+        <section class="section">
+          <div class="container">
+            <div class="surface surface--subtle page-intro">
+              <h2>Explore more workflows</h2>
+              <div class="btn-row" style="justify-content: center">
+                <a class="btn btn--ghost" href="../projects.html">All projects</a>
+                <a class="btn btn--ghost" href="tableau.html">Tableau</a>
+                <a class="btn btn--ghost" href="powerbi.html">Power BI</a>
+                <a class="btn btn--ghost" href="python.html">Python</a>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<!-- Banner -->
-				<!-- Note: The "styleN" class below should match that of the banner element. -->
-					<section id="banner" class="style2">
-						<div class="inner">
-							<span class="image">
-								<img src="../../images/pic07.jpg" alt="" />
-							</span>
-							<header class="major">
-								<h1>SQL Projects</h1>
-							</header>
-							<div class="content">
-								<p>Database queries and data analysis using SQL.</p>
-							</div>
-						</div>
-					</section>
+        <section class="section" id="contact">
+          <div class="container">
+            <div class="cta">
+              <h2>Let’s optimize your data layer</h2>
+              <p>
+                From schema design to performance tuning, I can help teams trust the data powering their dashboards.
+              </p>
+              <div class="btn-row" style="justify-content: center">
+                <a
+                  class="btn btn--primary"
+                  href="https://www.linkedin.com/in/ahmedhindy02"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Connect on LinkedIn
+                </a>
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/ahmed-h1ndy"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  View GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
 
-				<!-- Main -->
-					<div id="main">
+      <footer>
+        <div class="footer__inner">
+          <p>
+            &copy; <span data-current-year></span> Ahmed Hindy. Crafted with HTML, CSS, and a love for data.
+          </p>
+          <div class="social">
+            <a href="https://github.com/ahmed-h1ndy" aria-label="GitHub" target="_blank" rel="noopener">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ahmedhindy02"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://learn.365datascience.com/profile/ahmed-mostafa-123/"
+              aria-label="365 Data Science"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h2>Querying for Insights</h2>
-									</header>
-									<p>Using SQL to extract, transform, and analyze data from relational databases.</p>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="spotlights">
-								<!-- SQL projects will be added here as they become available -->
-								<section>
-									<a href="#" class="image">
-										<img src="../../images/Projects/SQL/customerEngagementProject.png" alt="Customer Engagement Analysis with SQL & Tableau" data-position="center center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Customer Engagement Analysis with SQL & Tableau</h3>
-											</header>
-											<p><strong>Project Overview:</strong> This project analyzes customer engagement, purchases, and learning behavior using SQL for data exploration and Tableau for visualization. It demonstrates how to structure queries, build reusable views, and generate actionable business insights.</p>
-											<p><strong>SQL Highlights:</strong></p>
-												<ul>
-													<li>CTEs for modular analysis (ratings, minutes, purchases)</li>
-													<li>Reusable Views (purchases_info, full_student_info)</li>
-													<li>Analytical Queries (top countries, top purchase months)</li>
-												</ul>
-											<p><strong>Key Insights:</strong></p>
-												<ul>
-													<li>Purchases are concentrated in English-speaking countries → consider translation/localization to expand</li>
-													<li>India and Nigeria show high engagement but low conversions → potential for regional pricing</li>
-													<li>Odd months outperform even months due to campaign timing → marketing is effective</li>
-													<li>Introductory courses dominate → opportunity for structured progression paths</li>
-												</ul>
-											<ul class="actions">
-												<li><a href="https://github.com/ahmed-h1ndy/customer-engagement-sql-tableau" class="button">View on GitHub</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-							</section>
-
-						<!-- Three -->
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Explore Other Categories</h2>
-									</header>
-									<ul class="actions">
-										<li><a href="../projects.html" class="button">All Projects</a></li>
-										<li><a href="tableau.html" class="button">Tableau</a></li>
-										<li><a href="powerbi.html" class="button">Power BI</a></li>
-										<li><a href="python.html" class="button">Python</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://github.com/ahmed-h1ndy" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.linkedin.com/in/ahmedhindy02" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://learn.365datascience.com/profile/ahmed-mostafa-123/" class="icon alt"><img src="../../images/365datascienceIcon.jpg" alt="365 Data Science" style="width: 48px; height: 48px; vertical-align: middle; border-radius: 4px;"><span class="label">365 Data Science</span></a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="../../assets/js/jquery.min.js"></script>
-			<script src="../../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../../assets/js/browser.min.js"></script>
-			<script src="../../assets/js/breakpoints.min.js"></script>
-			<script src="../../assets/js/util.js"></script>
-			<script src="../../assets/js/main.js"></script>
-
-	</body>
+    <script src="../../assets/js/site.js"></script>
+  </body>
 </html>
