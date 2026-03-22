@@ -12,34 +12,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Unbounded:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <link rel="stylesheet" href="assets/css/theme.css" />
   </head>
   <body>
-    <div class="page">
+    <div id="preloader" class="preloader">
+      <div class="preloader__text">Loading Data <span id="preloader-progress">0</span>%</div>
+    </div>
+    <div id="cursor" class="custom-cursor"></div>
+    <div id="cursor-follower" class="custom-cursor-follower"></div>
+    
+    <div class="universe">
       <header class="site-header">
-        <div class="site-header__inner">
+        <div class="site-header__frame">
           <a class="brand" href="index.html">
             Ahmed Hindy
             <span>Data Analyst</span>
           </a>
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="primary-navigation"
-            data-nav-toggle
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path
-                d="M4 6.75h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5Zm16 4.5H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Zm0 6H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Z"
-              />
-            </svg>
-          </button>
           <nav class="site-nav" id="primary-navigation" data-nav>
             <a href="pages/projects.html">Projects</a>
             <a href="pages/certifications.html">Certifications</a>
@@ -47,43 +39,62 @@
             <a href="pages/hobbies.html">Hobbies</a>
             <a href="#contact">Contact</a>
           </nav>
-          <a
-            class="btn btn--ghost nav-cta"
-            href="https://www.linkedin.com/in/ahmedhindy02"
-            target="_blank"
-            rel="noopener"
-          >
-            Let's connect
-          </a>
+          <div class="site-header__actions">
+            <a
+              class="btn btn--ghost nav-cta"
+              href="https://www.linkedin.com/in/ahmedhindy02"
+              target="_blank"
+              rel="noopener"
+            >
+              Let's connect
+            </a>
+            <button
+              class="menu-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              data-nav-toggle
+            >
+              <span class="sr-only">Toggle navigation</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M4 6.75h16a.75.75 0 0 0 0-1.5H4a.75.75 0 0 0 0 1.5Zm16 4.5H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Zm0 6H4a.75.75 0 0 0 0 1.5h16a.75.75 0 0 0 0-1.5Z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </header>
 
       <main>
         <section class="section hero" id="top">
-          <div class="container">
-            <div class="hero__grid">
-              <div class="hero__content">
-                <div class="hero__eyebrow">
-                  <span aria-hidden="true">&#x2728;</span>
-                  Data Analyst &amp; BI Storyteller
-                </div>
-                <div class="hero__headline">
-                  <h1>Ahmed Hindy</h1>
-                  <p class="hero__lead">
-                    Turning complex datasets into practical insight so teams can act with confidence.
-                  </p>
-                </div>
-                <ul class="chip-row" aria-label="Core tools">
-                  <li class="chip"><i class="fab fa-python" aria-hidden="true"></i>Python</li>
-                  <li class="chip"><i class="fas fa-database" aria-hidden="true"></i>SQL</li>
-                  <li class="chip"><i class="fas fa-chart-bar" aria-hidden="true"></i>Tableau</li>
-                  <li class="chip"><i class="fas fa-chart-line" aria-hidden="true"></i>Power BI</li>
-                  <li class="chip"><i class="fas fa-file-excel" aria-hidden="true"></i>Excel</li>
-                </ul>
+          <div class="hero__glow" aria-hidden="true"></div>
+          <div class="wrap hero__grid">
+            <div class="hero__copy">
+              <p class="hero__eyebrow">
+                <span aria-hidden="true">&#x2728;</span>
+                Orbiting analytics, business empathy, and bold storytelling
+              </p>
+              <h1>
+                Ahmed Hindy
+                <span>Data Analyst &amp; BI Storyteller</span>
+              </h1>
+              <p class="hero__lead">
+                Turning complex datasets into practical insight so teams can act with confidence. My process is part
+                investigation lab, part design studio, and 100% obsessed with decisions.
+              </p>
+              <ul class="chip-row" aria-label="Core tools">
+                <li class="chip"><i class="fab fa-python" aria-hidden="true"></i>Python</li>
+                <li class="chip"><i class="fas fa-database" aria-hidden="true"></i>SQL</li>
+                <li class="chip"><i class="fas fa-chart-bar" aria-hidden="true"></i>Tableau</li>
+                <li class="chip"><i class="fas fa-chart-line" aria-hidden="true"></i>Power BI</li>
+                <li class="chip"><i class="fas fa-file-excel" aria-hidden="true"></i>Excel</li>
+              </ul>
+              <div class="hero__cta">
                 <div class="btn-row">
-                  <a class="btn btn--primary" href="pages/projects.html">Explore projects</a>
+                  <a class="btn btn--primary" href="pages/projects.html">Dive into projects</a>
                   <a
-                    class="btn btn--ghost"
+                    class="btn btn--outline"
                     href="https://github.com/ahmed-h1ndy"
                     target="_blank"
                     rel="noopener"
@@ -91,74 +102,85 @@
                     View GitHub
                   </a>
                 </div>
-                <div class="hero__stats">
-                  <div class="stat">
-                    <div class="stat__value">Decision-ready dashboards</div>
-                    <div class="stat__label">Tableau &middot; Power BI &middot; Excel</div>
+                <div class="hero__labels">
+                  <div class="hero__label">
+                    Decision-ready dashboards
+                    <span>Tableau&nbsp;&middot;&nbsp;Power BI&nbsp;&middot;&nbsp;Excel</span>
                   </div>
-                  <div class="stat">
-                    <div class="stat__value">End-to-end data flows</div>
-                    <div class="stat__label">Python &middot; SQL &middot; ETL &middot; Automation</div>
+                  <div class="hero__label">
+                    End-to-end data flows
+                    <span>Python&nbsp;&middot;&nbsp;SQL&nbsp;&middot;&nbsp;ETL&nbsp;&middot;&nbsp;Automation</span>
                   </div>
-                  <div class="stat">
-                    <div class="stat__value">Insight to impact</div>
-                    <div class="stat__label">
-                      Customer experience &middot; Revenue trends &middot; Operations
-                    </div>
+                  <div class="hero__label">
+                    Insight to impact
+                    <span>Customer experience&nbsp;&middot;&nbsp;Revenue trends&nbsp;&middot;&nbsp;Operations</span>
                   </div>
                 </div>
               </div>
-              <div class="hero__image">
+            </div>
+
+            <div class="hero__visual">
+              <div class="hero__webgl" id="hero-canvas" aria-hidden="true"></div>
+              <div class="hero__panel">
                 <div class="portrait">
                   <img src="images/ahmedhindy.jpg" alt="Portrait of Ahmed Hindy" />
                 </div>
+                <div class="hero__panel-meta">
+                  <div>
+                    <span class="hero__panel-label">HQ</span>
+                    Cairo, Egypt
+                  </div>
+                  <div>
+                    <span class="hero__panel-label">Mode</span>
+                    Remote-first &amp; async native
+                  </div>
+                </div>
+              </div>
+              <div class="hero__stat-card">
+                <p>Latest obsession</p>
+                <h3>Designing measurable data adventures</h3>
+                <span>Always prototyping &middot; Always collaborating</span>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section" id="focus">
-          <div class="container">
+        <section class="section constellation" id="focus">
+          <div class="wrap">
             <div class="section__intro">
               <span class="section__eyebrow">Modern data craft</span>
               <h2>Where I create measurable impact</h2>
-              <p class="section__description">
-                From raw inputs to executive dashboards, I combine analytics, storytelling, and empathy for
-                the business to surface what matters.
+              <p>
+                From raw inputs to executive dashboards, I combine analytics, storytelling, and empathy for business
+                partners to surface what matters.
               </p>
             </div>
-            <div class="card-grid">
-              <article class="card surface--flat">
-                <div class="card__icon"><i class="fas fa-chart-pie" aria-hidden="true"></i></div>
-                <h3 class="card__title">Data visualization</h3>
-                <p>
-                  Build dashboards that bring clarity to growth, operations, and customer journeys.
-                </p>
-                <ul class="card__bullets">
+            <div class="constellation__grid">
+              <article class="story-card">
+                <div class="story-card__icon"><i class="fas fa-chart-pie" aria-hidden="true"></i></div>
+                <h3>Data visualization</h3>
+                <p>Build dashboards that bring clarity to growth, operations, and customer journeys.</p>
+                <ul>
                   <li>Advanced Tableau and Power BI stories with interactive drilldowns.</li>
                   <li>Excel solutions with Pivot Tables, Macros, and Power Query for rapid insight.</li>
                   <li>Python-based visuals with Matplotlib, Seaborn, and Plotly.</li>
                 </ul>
               </article>
-              <article class="card surface--flat">
-                <div class="card__icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
-                <h3 class="card__title">Programming &amp; analysis</h3>
-                <p>
-                  Design resilient data workflows that blend automation with human-ready narratives.
-                </p>
-                <ul class="card__bullets">
+              <article class="story-card">
+                <div class="story-card__icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+                <h3>Programming &amp; analysis</h3>
+                <p>Design resilient data workflows that blend automation with human-ready narratives.</p>
+                <ul>
                   <li>Python (pandas, NumPy, scikit-learn) for cleaning, modeling, and ML.</li>
                   <li>SQL development with PostgreSQL and MySQL for analytics and reporting.</li>
                   <li>R packages including ggplot2, dplyr, and tidyr for statistical exploration.</li>
                 </ul>
               </article>
-              <article class="card surface--flat">
-                <div class="card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
-                <h3 class="card__title">Statistical methods</h3>
-                <p>
-                  Validate ideas with rigorous quantitative techniques that drive confident decisions.
-                </p>
-                <ul class="card__bullets">
+              <article class="story-card">
+                <div class="story-card__icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                <h3>Statistical methods</h3>
+                <p>Validate ideas with rigorous quantitative techniques that drive confident decisions.</p>
+                <ul>
                   <li>Hypothesis and A/B testing to evaluate product and service changes.</li>
                   <li>Regression analysis for forecasting and performance measurement.</li>
                   <li>Descriptive and inferential statistics to highlight actionable signals.</li>
@@ -168,48 +190,58 @@
           </div>
         </section>
 
-        <section class="section" id="projects">
-          <div class="container">
+        <section class="section section--projects" id="projects">
+          <div class="wrap">
             <div class="section__intro">
               <span class="section__eyebrow">Signature projects</span>
               <h2>Selected work that pairs insight with execution</h2>
-              <p class="section__description">
-                A glimpse of the dashboards, models, and analyses I deliver. Explore the full library for more
-                detail.
+              <p>
+                A glimpse of the dashboards, models, and analyses I deliver. Explore the full library for more detail.
               </p>
             </div>
-            <div class="card-grid">
-              <article class="card project-card">
-                <div class="card__icon"><i class="fas fa-home" aria-hidden="true"></i></div>
-                <h3 class="card__title">Real Estate Market Analysis</h3>
+            <div class="project-grid">
+              <article class="case-card">
+                <header>
+                  <i class="fas fa-home" aria-hidden="true"></i>
+                  <div>
+                    <p>Analytics + Visualization</p>
+                    <h3>Real Estate Market Analysis</h3>
+                  </div>
+                </header>
                 <p>
-                  Cleaned, merged, and analyzed property and customer datasets to surface revenue trends, buyer
-                  personas, and regional demand signals.
+                  Cleaned, merged, and analyzed property and customer datasets to surface revenue trends, buyer personas,
+                  and regional demand signals.
                 </p>
                 <div class="project-card__tags">
                   <span class="tag">Python</span>
                   <span class="tag">EDA</span>
                   <span class="tag">Visualization</span>
                 </div>
-                <div class="project-card__footer">
+                <footer>
                   <a href="https://github.com/ahmed-h1ndy/real-estate-analysis" target="_blank" rel="noopener">
                     View project
                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </a>
-                </div>
+                </footer>
               </article>
-              <article class="card project-card">
-                <div class="card__icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
-                <h3 class="card__title">E-Learning Onboarding Survey Dashboard</h3>
+
+              <article class="case-card">
+                <header>
+                  <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                  <div>
+                    <p>Experience Design</p>
+                    <h3>E-Learning Onboarding Survey Dashboard</h3>
+                  </div>
+                </header>
                 <p>
-                  Built an interactive Tableau experience to track learner sentiment, completion trends, and
-                  curriculum effectiveness for an e-learning provider.
+                  Built an interactive Tableau experience to track learner sentiment, completion trends, and curriculum
+                  effectiveness for an e-learning provider.
                 </p>
                 <div class="project-card__tags">
                   <span class="tag">Tableau</span>
                   <span class="tag">Survey Analytics</span>
                 </div>
-                <div class="project-card__footer">
+                <footer>
                   <a
                     href="https://public.tableau.com/app/profile/ahmed.hindy/viz/E-LearningOnboardingSurveyDashboard/Dashboard"
                     target="_blank"
@@ -218,34 +250,42 @@
                     Explore dashboard
                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </a>
-                </div>
+                </footer>
               </article>
-              <article class="card project-card">
-                <div class="card__icon"><i class="fab fa-youtube" aria-hidden="true"></i></div>
-                <h3 class="card__title">YouTube's Top 1,000 Channels</h3>
+
+              <article class="case-card">
+                <header>
+                  <i class="fab fa-youtube" aria-hidden="true"></i>
+                  <div>
+                    <p>Data Storytelling</p>
+                    <h3>YouTube's Top 1,000 Channels</h3>
+                  </div>
+                </header>
                 <p>
-                  Combined SQL and Python to profile creator performance, identify category patterns, and highlight
-                  new opportunities for growth.
+                  Combined SQL and Python to profile creator performance, identify category patterns, and highlight new
+                  opportunities for growth.
                 </p>
                 <div class="project-card__tags">
                   <span class="tag">Python</span>
                   <span class="tag">SQL</span>
                   <span class="tag">Data Storytelling</span>
                 </div>
-                <div class="project-card__footer">
-                  <a
-                    href="https://github.com/ahmed-h1ndy/youtube-top-1000-analysis"
-                    target="_blank"
-                    rel="noopener"
-                  >
+                <footer>
+                  <a href="https://github.com/ahmed-h1ndy/youtube-top-1000-analysis" target="_blank" rel="noopener">
                     View repository
                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </a>
-                </div>
+                </footer>
               </article>
-              <article class="card project-card">
-                <div class="card__icon"><i class="fas fa-headset" aria-hidden="true"></i></div>
-                <h3 class="card__title">Call Center KPI Dashboard</h3>
+
+              <article class="case-card">
+                <header>
+                  <i class="fas fa-headset" aria-hidden="true"></i>
+                  <div>
+                    <p>Operations</p>
+                    <h3>Call Center KPI Dashboard</h3>
+                  </div>
+                </header>
                 <p>
                   Delivered a Power BI dashboard that tracks SLAs, channel performance, and customer sentiment to
                   improve service delivery.
@@ -254,149 +294,138 @@
                   <span class="tag">Power BI</span>
                   <span class="tag">Customer Experience</span>
                 </div>
-                <div class="project-card__footer">
-                  <a
-                    href="https://github.com/ahmed-h1ndy/call-center-dashboard"
-                    target="_blank"
-                    rel="noopener"
-                  >
+                <footer>
+                  <a href="https://github.com/ahmed-h1ndy/call-center-dashboard" target="_blank" rel="noopener">
                     See insights
                     <i class="fas fa-arrow-right" aria-hidden="true"></i>
                   </a>
-                </div>
+                </footer>
               </article>
             </div>
-            <div class="btn-row" style="margin-top: 2.5rem">
+            <div class="btn-row project-cta">
               <a class="btn btn--primary" href="pages/projects.html">Browse the full project hub</a>
             </div>
           </div>
         </section>
 
-        <section class="section" id="toolkit">
-          <div class="container">
-            <div class="surface surface--subtle">
-              <div class="section__intro">
-                <span class="section__eyebrow">Toolkit</span>
-                <h2>Technical capabilities at a glance</h2>
-                <p class="section__description">
-                  Comfortable across the stack that moves a question from discovery to delivery.
-                </p>
-              </div>
-              <div class="card-grid">
-                <article class="card surface--subtle">
-                  <div class="card__icon"><i class="fas fa-chart-area" aria-hidden="true"></i></div>
-                  <h3 class="card__title">Data visualization</h3>
-                  <ul class="card__bullets">
-                    <li>Tableau Desktop (advanced dashboards &amp; story points).</li>
-                    <li>Microsoft Power BI with DAX and Power Query.</li>
-                    <li>Excel automation with Power Pivot, macros, and VBA.</li>
-                  </ul>
-                </article>
-                <article class="card surface--subtle">
-                  <div class="card__icon"><i class="fas fa-server" aria-hidden="true"></i></div>
-                  <h3 class="card__title">Data engineering foundations</h3>
-                  <ul class="card__bullets">
-                    <li>Python ETL with pandas, NumPy, and workflow automation.</li>
-                    <li>SQL development in PostgreSQL and MySQL.</li>
-                    <li>Web scraping pipelines for structured datasets.</li>
-                  </ul>
-                </article>
-                <article class="card surface--subtle">
-                  <div class="card__icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
-                  <h3 class="card__title">Analytics &amp; statistics</h3>
-                  <ul class="card__bullets">
-                    <li>Hypothesis testing, regression, and forecasting.</li>
-                    <li>A/B testing design and evaluation.</li>
-                    <li>Machine learning foundations with scikit-learn.</li>
-                  </ul>
-                </article>
-                <article class="card surface--subtle">
-                  <div class="card__icon"><i class="fas fa-users" aria-hidden="true"></i></div>
-                  <h3 class="card__title">Collaboration</h3>
-                  <ul class="card__bullets">
-                    <li>Git &amp; GitHub for version control and reviews.</li>
-                    <li>Business stakeholder workshops and requirements capture.</li>
-                    <li>Storytelling that connects metrics with strategic action.</li>
-                  </ul>
-                </article>
-              </div>
+        <section class="section section--toolkit" id="toolkit">
+          <div class="wrap">
+            <div class="section__intro">
+              <span class="section__eyebrow">Toolkit</span>
+              <h2>Technical capabilities at a glance</h2>
+              <p>Comfortable across the stack that moves a question from discovery to delivery.</p>
+            </div>
+            <div class="stack-grid">
+              <article class="stack-card">
+                <header>
+                  <div class="stack-card__icon"><i class="fas fa-chart-area" aria-hidden="true"></i></div>
+                  <h3>Data visualization</h3>
+                </header>
+                <ul>
+                  <li>Tableau Desktop (advanced dashboards &amp; story points).</li>
+                  <li>Microsoft Power BI with DAX and Power Query.</li>
+                  <li>Excel automation with Power Pivot, macros, and VBA.</li>
+                </ul>
+              </article>
+              <article class="stack-card">
+                <header>
+                  <div class="stack-card__icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+                  <h3>Data engineering foundations</h3>
+                </header>
+                <ul>
+                  <li>Python ETL with pandas, NumPy, and workflow automation.</li>
+                  <li>SQL development in PostgreSQL and MySQL.</li>
+                  <li>Web scraping pipelines for structured datasets.</li>
+                </ul>
+              </article>
+              <article class="stack-card">
+                <header>
+                  <div class="stack-card__icon"><i class="fas fa-bullseye" aria-hidden="true"></i></div>
+                  <h3>Analytics &amp; statistics</h3>
+                </header>
+                <ul>
+                  <li>Hypothesis testing, regression, and forecasting.</li>
+                  <li>A/B testing design and evaluation.</li>
+                  <li>Machine learning foundations with scikit-learn.</li>
+                </ul>
+              </article>
+              <article class="stack-card">
+                <header>
+                  <div class="stack-card__icon"><i class="fas fa-users" aria-hidden="true"></i></div>
+                  <h3>Collaboration</h3>
+                </header>
+                <ul>
+                  <li>Git &amp; GitHub for version control and reviews.</li>
+                  <li>Business stakeholder workshops and requirements capture.</li>
+                  <li>Storytelling that connects metrics with strategic action.</li>
+                </ul>
+              </article>
             </div>
           </div>
         </section>
 
-        <section class="section" id="experience">
-          <div class="container">
+        <section class="section section--experience" id="experience">
+          <div class="wrap">
             <div class="section__intro">
               <span class="section__eyebrow">Experience</span>
               <h2>Highlights from my journey</h2>
-              <p class="section__description">
+              <p>
                 A blend of customer-facing work, AI experimentation, and academic excellence that shapes how I build
                 with data.
               </p>
             </div>
-            <div class="surface surface--flat">
-              <div class="timeline">
-                <article class="timeline__item">
-                  <h3 class="timeline__role">Customer Experience Specialist &ndash; Concentrix</h3>
-                  <p class="timeline__meta">
-                    <i class="fas fa-briefcase" aria-hidden="true"></i>
-                    Full-time &middot; Sep&nbsp;2024 &ndash; Present
-                  </p>
-                  <ul class="timeline__bullets">
-                    <li>Partnered with management to lift satisfaction scores by 10% through insight-led improvements.</li>
-                    <li>Analyzed daily case patterns to uncover recurring issues and streamline resolutions.</li>
-                    <li>
-                      Consistently ranked among top performers across calls, chat, email, and ticket support workflows.
-                    </li>
-                  </ul>
-                </article>
-                <article class="timeline__item">
-                  <h3 class="timeline__role">AI Engineer &mdash; Bitline</h3>
-                  <p class="timeline__meta">
-                    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-                    Project-based &middot; Sep&nbsp;2024 &ndash; Nov&nbsp;2024
-                  </p>
-                  <ul class="timeline__bullets">
-                    <li>Built Python pipelines that boosted data throughput by 60%.</li>
-                    <li>
-                      Delivered a cost-efficient RAG pipeline using open-source LLMs with GPT-4 level accuracy at 10% of
-                      the cost.
-                    </li>
-                    <li>
-                      Streamlined the AI lifecycle &mdash; collection, cleaning, embeddings, and prompt tuning &mdash;
-                      accelerating delivery by 40%.
-                    </li>
-                  </ul>
-                </article>
-                <article class="timeline__item">
-                  <h3 class="timeline__role">
-                    B.Sc. in Computer Science (Information Systems) &ndash; Ain Shams University
-                  </h3>
-                  <p class="timeline__meta">
-                    <i class="fas fa-graduation-cap" aria-hidden="true"></i>
-                    Aug&nbsp;2020 &ndash; Aug&nbsp;2024 &middot; Graduated with Honors (GPA&nbsp;3.2)
-                  </p>
-                  <ul class="timeline__bullets">
-                    <li>Explored artificial intelligence, data science, statistical inference, data mining, and algorithms.</li>
-                    <li>
-                      Delivered machine learning projects, including CNN models for artwork classification and computer
-                      vision experiments.
-                    </li>
-                  </ul>
-                </article>
-              </div>
+            <div class="timeline">
+              <article class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true"></div>
+                <h3>Customer Experience Specialist &ndash; Concentrix</h3>
+                <p class="timeline__meta">
+                  <i class="fas fa-briefcase" aria-hidden="true"></i>
+                  Full-time &middot; Sep&nbsp;2024 &ndash; Present
+                </p>
+                <ul>
+                  <li>Partnered with management to lift satisfaction scores by 10% through insight-led improvements.</li>
+                  <li>Analyzed daily case patterns to uncover recurring issues and streamline resolutions.</li>
+                  <li>Consistently ranked among top performers across calls, chat, email, and ticket support workflows.</li>
+                </ul>
+              </article>
+              <article class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true"></div>
+                <h3>AI Engineer &mdash; Bitline</h3>
+                <p class="timeline__meta">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+                  Project-based &middot; Sep&nbsp;2024 &ndash; Nov&nbsp;2024
+                </p>
+                <ul>
+                  <li>Built Python pipelines that boosted data throughput by 60%.</li>
+                  <li>Delivered a cost-efficient RAG pipeline using open-source LLMs with GPT-4 level accuracy at 10% of
+                    the cost.</li>
+                  <li>Streamlined the AI lifecycle &mdash; collection, cleaning, embeddings, and prompt tuning &mdash;
+                    accelerating delivery by 40%.</li>
+                </ul>
+              </article>
+              <article class="timeline__item">
+                <div class="timeline__dot" aria-hidden="true"></div>
+                <h3>B.Sc. in Computer Science (Information Systems) &ndash; Ain Shams University</h3>
+                <p class="timeline__meta">
+                  <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                  Aug&nbsp;2020 &ndash; Aug&nbsp;2024 &middot; Graduated with Honors (GPA&nbsp;3.2)
+                </p>
+                <ul>
+                  <li>Explored artificial intelligence, data science, statistical inference, data mining, and algorithms.</li>
+                  <li>Delivered machine learning projects, including CNN models for artwork classification and computer
+                    vision experiments.</li>
+                </ul>
+              </article>
             </div>
           </div>
         </section>
 
-        <section class="section" id="credentials">
-          <div class="container">
+        <section class="section section--credentials" id="credentials">
+          <div class="wrap">
             <div class="section__intro">
               <span class="section__eyebrow">Continuous learning</span>
               <h2>Certifications &amp; applied programs</h2>
-              <p class="section__description">
-                Structured learning paths and simulated client projects that keep my toolkit sharp.
-              </p>
+              <p>Structured learning paths and simulated client projects that keep my toolkit sharp.</p>
             </div>
             <div class="cert-grid">
               <article class="cert-card">
@@ -439,21 +468,21 @@
                 </div>
               </article>
             </div>
-            <div class="btn-row" style="margin-top: 2.5rem">
-              <a class="btn btn--ghost" href="pages/certifications.html">Browse full certification log</a>
+            <div class="btn-row cert-cta">
+              <a class="btn btn--outline" href="pages/certifications.html">Browse full certification log</a>
             </div>
           </div>
         </section>
 
-        <section class="section" id="contact">
-          <div class="container">
+        <section class="section section--contact" id="contact">
+          <div class="wrap">
             <div class="cta">
               <h2>Let's turn complex data into confident decisions</h2>
               <p>
-                I’m ready to collaborate on analytics, dashboards, or data science initiatives that demand both
-                precision and partnership. Say hello and let’s build something impactful.
+                I'm ready to collaborate on analytics, dashboards, or data science initiatives that demand both precision
+                and partnership. Say hello and let's build something impactful.
               </p>
-              <div class="btn-row" style="justify-content: center">
+              <div class="btn-row">
                 <a
                   class="btn btn--primary"
                   href="https://www.linkedin.com/in/ahmedhindy02"
@@ -463,7 +492,7 @@
                   Connect on LinkedIn
                 </a>
                 <a
-                  class="btn btn--ghost"
+                  class="btn btn--outline"
                   href="https://github.com/ahmed-h1ndy"
                   target="_blank"
                   rel="noopener"
@@ -471,7 +500,7 @@
                   View GitHub
                 </a>
                 <a
-                  class="btn btn--ghost"
+                  class="btn btn--outline"
                   href="https://learn.365datascience.com/profile/ahmed-mostafa-123/"
                   target="_blank"
                   rel="noopener"
@@ -512,6 +541,10 @@
       </footer>
     </div>
 
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="assets/js/site.js"></script>
   </body>
 </html>
