@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Page not found · Ahmed Hindy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta name="theme-color" content="#07090f" />
+    <link rel="icon" href="/images/ahmedhindy.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="/assets/css/theme.css" />
+    <style>
+      .error-wrap {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem var(--shell-padding);
+        gap: 0.4rem;
+      }
+      .error-code {
+        font-family: var(--font-mono);
+        font-variant-numeric: tabular-nums;
+        font-size: clamp(5rem, 20vw, 11rem);
+        font-weight: 700;
+        line-height: 1;
+        background: linear-gradient(120deg, var(--accent-strong), var(--accent-2-strong));
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-wrap">
+      <span class="section__eyebrow" style="justify-content: center">Signal lost</span>
+      <div class="error-code">404</div>
+      <h1 style="font-family: var(--font-body); font-weight: 600">This data point doesn't exist</h1>
+      <p style="max-width: 46ch">The page you're looking for moved, was renamed, or never existed. Let's get you back to something real.</p>
+      <div class="btn-row btn-row--center" style="margin-top: 1rem">
+        <a class="btn btn--primary" href="/index.html"><i class="fas fa-home" aria-hidden="true"></i> Back home</a>
+        <a class="btn btn--outline" href="/pages/projects.html">View projects</a>
+      </div>
+    </div>
+  </body>
+</html>

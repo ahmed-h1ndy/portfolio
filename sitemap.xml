@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.ahmedhindy.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/certifications.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/career.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/hobbies.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects/tableau.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects/powerbi.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects/excel.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects/python.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects/sql.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/projects/web-scraping.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/certifications/track.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/certifications/virtual-internship.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/certifications/courses/technical.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.ahmedhindy.com/pages/certifications/courses/soft-skills.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+</urlset>
